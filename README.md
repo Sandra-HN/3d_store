@@ -16,3 +16,7 @@ https://console.firebase.google.com/project/threed-store/overview
 
 # host on firebase
 https://www.youtube.com/watch?v=98TXDLZLyNs
+
+# To update 
+1- npm run build
+2- firebase deploy

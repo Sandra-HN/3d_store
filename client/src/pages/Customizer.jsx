@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useSnapshot } from "valtio";
 
-import config from "../config/config";
 import state from "../store";
-import { download } from "../assets";
-import { downloadCanvasToImage, reader } from "../config/helpers";
+import { reader } from "../config/helpers";
 import { EditorTabs, FilterTabs, DecalTypes } from "../config/constants";
 import { fadeAnimation, slideAnimation } from "../config/motion";
 import {
@@ -161,6 +159,8 @@ const Customizer = ({ screenCapture, handleSave, onStartCapture }) => {
               handleClick={() => (state.intro = true)}
               customStyles="w-fit px-4 py-2.5 font-bold text-sm"
             />
+            <div className="invisible md:visible">
+
             {screenCapture ? (
               <CustomButton
                 type="filled"
@@ -176,6 +176,7 @@ const Customizer = ({ screenCapture, handleSave, onStartCapture }) => {
                 customStyles="w-fit px-4 py-2.5 font-bold text-sm"
               />
             )}
+            </div>
           </motion.div>
 
           <motion.div
