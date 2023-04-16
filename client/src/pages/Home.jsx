@@ -9,7 +9,7 @@ import {
   headTextAnimation,
   slideAnimation
 } from '../config/motion';
-const Home = () => {
+const Home = ({screenCapture,handleSave,onStartCapture}) => {
     const snap = useSnapshot(state);
 
   return (
@@ -44,6 +44,17 @@ const Home = () => {
                 handleClick={() => state.intro = false}
                 customStyles="w-fit px-4 py-2.5 font-bold text-sm"
               />
+              {/* {screenCapture ? <CustomButton 
+                type="filled"
+                title="Download"
+                handleClick={() => handleSave()}
+                customStyles="w-fit px-4 py-2.5 font-bold text-sm"
+              />:<CustomButton 
+              type="filled"
+              title="Capture"
+              handleClick={() => onStartCapture()}
+              customStyles="w-fit px-4 py-2.5 font-bold text-sm"
+            />} */}
             </motion.div>
           </motion.div>
         </motion.section>
