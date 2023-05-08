@@ -1,13 +1,5 @@
 # 3d_store
 Threejs with ChatGPT store
-# server hosting 
-https://dashboard.render.com/web/srv-cgtvd4aut4mcfrnsipcg/deploys/dep-cgtvjnaut4mcfrntiecg
-# Specifying a Node Version
-https://render.com/docs/node-version
-
-# server published link
-https://threed-store.onrender.com
-
 # client published link
 https://threed-store.web.app/
 
@@ -20,3 +12,10 @@ https://www.youtube.com/watch?v=98TXDLZLyNs
 # To update 
 1- npm run build
 2- firebase deploy
+
+# Summarizer api
+https://platform.openai.com/examples/default-tldr-summary?lang=node.js
+
+# Examples
+https://reactjsexample.com/tag/chatgpt/
+
